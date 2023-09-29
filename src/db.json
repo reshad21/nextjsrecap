@@ -1,0 +1,220 @@
+{
+    "categories": [
+      {
+        "id": 1,
+        "name": "Electronics",
+        "image_url": "electronics.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Clothing",
+        "image_url": "clothing.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Home Appliances",
+        "image_url": "home_appliances.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Furniture",
+        "image_url": "furniture.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Toys",
+        "image_url": "toys.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Books",
+        "image_url": "books.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Sports Equipment",
+        "image_url": "sports_equipment.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Beauty & Personal Care",
+        "image_url": "beauty_personal_care.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Jewelry",
+        "image_url": "jewelry.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Food & Beverages",
+        "image_url": "food_beverages.jpg"
+      },
+      {
+        "id": 11,
+        "name": "Garden & Outdoor",
+        "image_url": "garden_outdoor.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Health & Fitness",
+        "image_url": "health_fitness.jpg"
+      }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "title": "iPhone 12",
+        "price": "999",
+        "categoryId": 1,
+        "features": [
+          "A14 Bionic Chip",
+          "Super Retina XDR display",
+          "Dual Camera system"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Samsung 4K Smart TV",
+        "price": "1300",
+        "categoryId": 1,
+        "features": [
+          "4K Ultra HD resolution",
+          "Smart TV functionality",
+          "Multiple HDMI and USB ports"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Men's Casual Shirt",
+        "price": 29.99,
+        "categoryId": 2,
+        "features": [
+          "Comfortable fabric",
+          "Available in various sizes and colors",
+          "Stylish design"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Refrigerator",
+        "price": 799,
+        "categoryId": 3,
+        "features": [
+          "Large storage capacity",
+          "Energy-efficient",
+          "Adjustable shelves"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Smartphone X",
+        "price": 699,
+        "categoryId": 1,
+        "features": [
+          "Powerful Processor",
+          "High-resolution screen",
+          "Advanced camera system"
+        ]
+      },
+      {
+        "id": 6,
+        "title": "55-inch LED TV",
+        "price": 799,
+        "categoryId": 1,
+        "features": [
+          "Full HD Display",
+          "Smart TV capabilities",
+          "Multiple connectivity options"
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Women's Summer Dress",
+        "price": 39.99,
+        "categoryId": 2,
+        "features": [
+          "Lightweight and breathable",
+          "Perfect for summer",
+          "Available in various patterns"
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Dishwasher",
+        "price": 499,
+        "categoryId": 3,
+        "features": [
+          "Efficient dishwashing",
+          "Multiple wash cycles",
+          "Quiet operation"
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Children's Educational Toys",
+        "price": 29.99,
+        "categoryId": 5,
+        "features": [
+          "Learning and fun combined",
+          "Safe and durable materials",
+          "Variety of educational activities"
+        ]
+      },
+      {
+        "id": 10,
+        "title": "Best-Selling Novel",
+        "price": 19.99,
+        "categoryId": 6,
+        "features": [
+          "Engaging storyline",
+          "Critically acclaimed",
+          "Hardcover edition"
+        ]
+      },
+      {
+        "id": 11,
+        "title": "Exercise Bike",
+        "price": 299,
+        "categoryId": 12,
+        "features": [
+          "Adjustable resistance levels",
+          "LCD display",
+          "Comfortable seat"
+        ]
+      },
+      {
+        "id": 12,
+        "title": "Luxury Perfume",
+        "price": 89.99,
+        "categoryId": 8,
+        "features": [
+          "Long-lasting fragrance",
+          "Elegant bottle design",
+          "High-quality ingredients"
+        ]
+      },
+      {
+        "id": 13,
+        "title": "Diamond Necklace",
+        "price": 1999,
+        "categoryId": 9,
+        "features": [
+          "Exquisite craftsmanship",
+          "Brilliant-cut diamonds",
+          "14k white gold setting"
+        ]
+      },
+      {
+        "id": 14,
+        "title": "Gourmet Coffee Beans",
+        "price": 12.99,
+        "categoryId": 10,
+        "features": [
+          "Single-origin beans",
+          "Rich and full-bodied flavor",
+          "Freshly roasted"
+        ]
+      }
+    ]
+}
