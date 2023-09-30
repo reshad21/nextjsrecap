@@ -25,7 +25,7 @@ const navitems = [
 
 const Navber = () => {
     return (
-        <div className="flex justify-between">
+        <div className="flex justify-between p-8">
             <h1>Navber</h1>
             <ul className="flex">
                 {
