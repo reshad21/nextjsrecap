@@ -4,7 +4,7 @@ const Product = ({ product }) => {
     return (
         <div className="border border-green-500 rounded-md p-4 block">
             <h1>{title}</h1>
-            <p>Price: {price}</p>
+            <p>Price: {price}$</p>
             <p>Features:<ul>
                 {
                     features.map((feature) => <li key={feature}>{feature}</li>)

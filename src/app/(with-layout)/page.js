@@ -1,9 +1,8 @@
 import Categories from "@/components/Homepage/Categories";
-
+export const revalidate = 5;
 const HomePage = () => {
   return (
-    <div className="px-8">
-      <div>Home Page</div>
+    <div className="container mx-auto">
       <Categories />
     </div>
   )
