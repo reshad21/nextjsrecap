@@ -5,6 +5,12 @@ import SingleProductRow from "./SingleProductRow";
 
 const ManageProduct = ({ products }) => {
     const modalRef = useRef(null);
+    const openModal = () => {
+        modalRef.current.showModal();
+    }
+    const closeModal = () => {
+        modalRef.current.close();
+    }
     return (
         <div className="w-full">
             <table className="w-full border-collapse border border-slate-400 ...">
@@ -18,11 +24,11 @@ const ManageProduct = ({ products }) => {
                 </thead>
                 <tbody>
                     {
-                        products.map((product) => <SingleProductRow key={product.id} product={product} />)
+                        products.map((product) => <SingleProductRow key={product.id} product={product} openModal={openModal} />)
                     }
                 </tbody>
             </table>
-            <Modal ref={modalRef} />
+            <Modal ref={modalRef} closeModal={closeModal} />
         </div>
     );
 };
