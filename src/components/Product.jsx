@@ -5,11 +5,11 @@ const Product = ({ product }) => {
         <div className="border border-green-500 rounded-md p-4 block">
             <h1>{title}</h1>
             <p>Price: {price}$</p>
-            <p>Features:<ul>
+            Features:<ul>
                 {
                     features.map((feature) => <li key={feature}>{feature}</li>)
                 }
-            </ul></p>
+            </ul>
         </div>
     );
 };

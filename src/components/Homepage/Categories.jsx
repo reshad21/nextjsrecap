@@ -3,7 +3,6 @@ import Category from './Category';
 
 const Categories = async () => {
     const data = await getAllCategories();
-    console.log(data.length);
     return (
         <div className="">
             <h1 className='text-xl font-bold'>Categories</h1>
