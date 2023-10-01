@@ -1,16 +1,20 @@
 "use client"
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Modal from "../Modal";
 import SingleProductRow from "./SingleProductRow";
 
 const ManageProduct = ({ products }) => {
     const modalRef = useRef(null);
-    const openModal = () => {
+    const [updateProduct, setUpdateProduct] = useState(null);
+
+    const openModal = (product) => {
+        setUpdateProduct(product);
         modalRef.current.showModal();
     }
     const closeModal = () => {
         modalRef.current.close();
     }
+
     return (
         <div className="w-full">
             <table className="w-full border-collapse border border-slate-400 ...">
@@ -28,7 +32,7 @@ const ManageProduct = ({ products }) => {
                     }
                 </tbody>
             </table>
-            <Modal ref={modalRef} closeModal={closeModal} />
+            <Modal ref={modalRef} closeModal={closeModal} updateProduct={updateProduct} />
         </div>
     );
 };
