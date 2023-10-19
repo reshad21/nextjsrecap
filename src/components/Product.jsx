@@ -1,14 +1,15 @@
 "use client";
 
 import { addToCart } from "@/Redux/features/cart/cartSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const Product = ({ product }) => {
+    const cart = useSelector((state) => state.cart);
+    console.log(cart);
     const { title, price, features, id } = product;
     const dispatch = useDispatch();
-    const handleAddToCart = (id) => {
+    const handleAddToCart = () => {
         dispatch(addToCart());
-        console.log(id);
     }
     return (
         <div className="border border-green-500 rounded-md p-4 pb-1 block">
