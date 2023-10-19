@@ -11,8 +11,8 @@ const Product = ({ product }) => {
                 }
             </ul>
             <div className="flex justify-between items-center mt-4 mb-2">
-                <button className="text-[14px] border border-green-500 rounded-md px-1 bg-yellow-500 text-white">AddToCart</button>
-                <button className="text-[14px] border border-green-500 rounded-md px-1 bg-green-500 text-white">RemoveFromCart</button>
+                <button className="text-[14px] font-semibold border border-green-500 rounded-md px-1 bg-yellow-500 text-white">AddToCart</button>
+                <button className="text-[14px] font-semibold border border-green-500 rounded-md px-1 bg-green-500 text-white">Buy Now</button>
             </div>
         </div>
     );
