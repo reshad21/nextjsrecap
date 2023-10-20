@@ -2,7 +2,7 @@ import getSingleBlog from "@/utils/getSingleBlog";
 
 
 export const generateMetaData = async ({ params }) => {
-    console.log(params);
+    // console.log(params);
     const { title } = await getSingleBlog(params.id);
     return {
         title: title,

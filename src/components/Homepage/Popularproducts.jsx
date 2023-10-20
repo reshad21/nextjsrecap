@@ -3,7 +3,6 @@ import getAllproducts from "@/utils/getAllproducts";
 
 const Popularproducts = async () => {
     const trendingProducts = await getAllproducts();
-    console.log(trendingProducts.length);
     return (
         <div>
             <h1 className="text-xl font-semibold">Popular Products</h1>
