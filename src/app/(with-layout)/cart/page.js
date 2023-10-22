@@ -1,8 +1,9 @@
+import Cart from "@/components/Cartpage/Cart";
 
 const AddToCart = () => {
     return (
-        <div>
-            <h1>add to cart page</h1>
+        <div className="px-6">
+            <Cart/>
         </div>
     );
 };
