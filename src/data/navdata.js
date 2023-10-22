@@ -16,10 +16,6 @@ export const navitems = [
         "title": "Blog"
     },
     {
-        "path": "/cart",
-        "title": "Cart"
-    },
-    {
         "path": "/dashboard",
         "title": "Dashboard"
     },
