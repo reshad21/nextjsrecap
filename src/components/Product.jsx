@@ -7,7 +7,7 @@ const Product = ({ product }) => {
     const cart = useSelector((state) => state.cart.cart);
     const { title, price, features } = product;
     const dispatch = useDispatch();
-    const handleAddToCart = (product) => {
+    const handleAddToCart = () => {
         dispatch(addToCart(product));
     }
     return (
