@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const CheckoutSingleProduct = () => {
+const Checkout = () => {
     return (
         <div className="bg-gray-50 py-5">
 
@@ -209,17 +209,8 @@ const CheckoutSingleProduct = () => {
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
         </div>
     )
 }
 
-export default CheckoutSingleProduct;
+export default Checkout;
