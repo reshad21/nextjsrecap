@@ -14,6 +14,9 @@ export const cartSlice = createSlice({
             if (existingProduct) {
                 existingProduct.quantity += 1;
                 existingProduct.price += action.payload.price;
+                // Format the price to have two decimal places
+                existingProduct.price = Number(existingProduct.price.toFixed(2));
+                state.totalPrice = Number(state.totalPrice.toFixed(2));
             } else {
                 state.cart.push({ ...action.payload, quantity: 1 });
                 state.totalPrice += action.payload.price;
