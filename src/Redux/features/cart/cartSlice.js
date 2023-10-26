@@ -3,7 +3,7 @@ const { createSlice } = require("@reduxjs/toolkit")
 
 const initialState = {
     cart: [],
-    // price: null,
+    totalPrice: 0,
 }
 
 export const cartSlice = createSlice({
@@ -14,8 +14,10 @@ export const cartSlice = createSlice({
             const existingProduct = state.cart.find((product) => product.id === action.payload.id);
             if (existingProduct) {
                 existingProduct.quantity += 1;
+                existingProduct.price += action.payload.price;
             } else {
                 state.cart.push({ ...action.payload, quantity: 1 });
+                state.totalPrice += action.payload.price;
             }
         },
 
@@ -23,20 +25,25 @@ export const cartSlice = createSlice({
             const existingProduct = state.cart.find((product) => product.id === action.payload.id);
             if (existingProduct) {
                 existingProduct.quantity += 1;
+                existingProduct.price += action.payload.price;
+                state.totalPrice += action.payload.price;
             }
         },
 
         decrease: (state, action) => {
-            state.cart = state.cart.filter((product) => {
-                if (product.id === action.payload.id) {
-                    if (product.quantity > 1) {
-                        product.quantity -= 1;
-                        return true; // Keep the product in the cart
-                    }
-                    return false; // Remove the product from the cart
+            const existingProduct = state.cart.find((product) => product.id === action.payload.id);
+        
+            if (existingProduct) {
+                if (existingProduct.quantity > 1) {
+                    const pricePerUnit = existingProduct.price / existingProduct.quantity;
+                    existingProduct.quantity -= 1;
+                    existingProduct.price -= pricePerUnit;
+                    state.totalPrice = state.cart.reduce((total, product) => total + product.price, 0);
+                } else {
+                    state.cart = state.cart.filter((product) => product.id !== action.payload.id);
+                    state.totalPrice -= existingProduct.price;
                 }
-                return true; // Keep other products in the cart
-            });
+            }
         },
     }
 })
