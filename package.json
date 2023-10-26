@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
+    "big.js": "^6.2.1",
+    "decimal.js": "^10.4.3",
     "json-server": "^0.17.3",
     "next": "latest",
     "react": "latest",

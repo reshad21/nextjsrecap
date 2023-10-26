@@ -1,6 +1,5 @@
 "use client"
 const { createSlice } = require("@reduxjs/toolkit")
-
 const initialState = {
     cart: [],
     totalPrice: 0,
@@ -24,15 +23,17 @@ export const cartSlice = createSlice({
         increase: (state, action) => {
             const existingProduct = state.cart.find((product) => product.id === action.payload.id);
             if (existingProduct) {
+                const pricePerUnit = existingProduct.price / existingProduct.quantity;
                 existingProduct.quantity += 1;
-                existingProduct.price += action.payload.price;
-                state.totalPrice += action.payload.price;
+                existingProduct.price += pricePerUnit;
+                state.totalPrice += pricePerUnit;
             }
+            
         },
 
         decrease: (state, action) => {
             const existingProduct = state.cart.find((product) => product.id === action.payload.id);
-        
+
             if (existingProduct) {
                 if (existingProduct.quantity > 1) {
                     const pricePerUnit = existingProduct.price / existingProduct.quantity;
