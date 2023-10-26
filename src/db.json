@@ -87,7 +87,7 @@
       {
         "id": 3,
         "title": "Men's Casual Shirt",
-        "price": 30,
+        "price": 29.99,
         "categoryId": 2,
         "features": [
           "Comfortable fabric",
@@ -131,7 +131,7 @@
       {
         "id": 7,
         "title": "Women's Summer Dress",
-        "price": 45,
+        "price": 44.99,
         "categoryId": 2,
         "features": [
           "Lightweight and breathable",
@@ -153,7 +153,7 @@
       {
         "id": 9,
         "title": "Children's Educational Toys",
-        "price": 15,
+        "price": 14.99,
         "categoryId": 5,
         "features": [
           "Learning and fun combined",
