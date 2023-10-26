@@ -28,7 +28,23 @@ const Cart = () => {
                     </div>
                 )
             }
-            <p className="text-end text-sm font-semibold px-1 text-green-600">Total Price: <span className="text-slate-600">{totalPrice}$</span></p>
+            {
+                (products.length > 0)
+                    ?
+                    <p className="text-end text-sm font-semibold px-1 text-green-600">Total Price: <span className="text-slate-600">{totalPrice}$</span></p>
+                    :
+                    <div className="flex flex-col items-center gap-1">
+                        <p className="text-center font-semibold">ADD TO CART YOUR PRODUCT</p>
+                        {/* <span className="text-2xl">😊</span> */}
+                        <span className="text-2xl">
+
+                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f600/512.gif" alt="😀" width="32" height="32" />
+
+                        </span>
+                    </div>
+
+            }
+
         </>
 
 
