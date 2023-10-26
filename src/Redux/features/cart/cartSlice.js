@@ -28,7 +28,10 @@ export const cartSlice = createSlice({
                 existingProduct.price += pricePerUnit;
                 state.totalPrice += pricePerUnit;
             }
-            
+            // Format the price to have two decimal places
+            existingProduct.price = Number(existingProduct.price.toFixed(2));
+            state.totalPrice = Number(state.totalPrice.toFixed(2));
+
         },
 
         decrease: (state, action) => {
@@ -44,6 +47,10 @@ export const cartSlice = createSlice({
                     state.cart = state.cart.filter((product) => product.id !== action.payload.id);
                     state.totalPrice -= existingProduct.price;
                 }
+
+                // Round the numbers to two decimal places
+                existingProduct.price = Number(existingProduct.price.toFixed(2));
+                state.totalPrice = Number(state.totalPrice.toFixed(2));
             }
         },
     }
