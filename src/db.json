@@ -65,7 +65,7 @@
       {
         "id": 1,
         "title": "iPhone 12",
-        "price": "999",
+        "price": 100,
         "categoryId": 1,
         "features": [
           "A14 Bionic Chip",
@@ -76,7 +76,7 @@
       {
         "id": 2,
         "title": "Samsung 4K Smart TV",
-        "price": "1300",
+        "price": 300,
         "categoryId": 1,
         "features": [
           "4K Ultra HD resolution",
@@ -87,7 +87,7 @@
       {
         "id": 3,
         "title": "Men's Casual Shirt",
-        "price": 29.99,
+        "price": 30,
         "categoryId": 2,
         "features": [
           "Comfortable fabric",
@@ -98,7 +98,7 @@
       {
         "id": 4,
         "title": "Refrigerator",
-        "price": 799,
+        "price": 800,
         "categoryId": 3,
         "features": [
           "Large storage capacity",
@@ -109,7 +109,7 @@
       {
         "id": 5,
         "title": "Smartphone X",
-        "price": 699,
+        "price": 500,
         "categoryId": 1,
         "features": [
           "Powerful Processor",
@@ -120,7 +120,7 @@
       {
         "id": 6,
         "title": "55-inch LED TV",
-        "price": 799,
+        "price": 700,
         "categoryId": 1,
         "features": [
           "Full HD Display",
@@ -131,7 +131,7 @@
       {
         "id": 7,
         "title": "Women's Summer Dress",
-        "price": 39.99,
+        "price": 45,
         "categoryId": 2,
         "features": [
           "Lightweight and breathable",
@@ -142,7 +142,7 @@
       {
         "id": 8,
         "title": "Dishwasher",
-        "price": 499,
+        "price": 5,
         "categoryId": 3,
         "features": [
           "Efficient dishwashing",
@@ -153,7 +153,7 @@
       {
         "id": 9,
         "title": "Children's Educational Toys",
-        "price": 29.99,
+        "price": 15,
         "categoryId": 5,
         "features": [
           "Learning and fun combined",
@@ -164,7 +164,7 @@
       {
         "id": 10,
         "title": "Best-Selling Novel",
-        "price": 19.99,
+        "price": 250,
         "categoryId": 6,
         "features": [
           "Engaging storyline",
@@ -175,7 +175,7 @@
       {
         "id": 11,
         "title": "Exercise Bike",
-        "price": 299,
+        "price": 600,
         "categoryId": 12,
         "features": [
           "Adjustable resistance levels",
@@ -186,7 +186,7 @@
       {
         "id": 12,
         "title": "Luxury Perfume",
-        "price": 89.99,
+        "price": 80,
         "categoryId": 8,
         "features": [
           "Long-lasting fragrance",
@@ -208,7 +208,7 @@
       {
         "id": 14,
         "title": "Gourmet Coffee Beans",
-        "price": 12.99,
+        "price": 12,
         "categoryId": 10,
         "features": [
           "Single-origin beans",
