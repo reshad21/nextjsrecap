@@ -1,7 +1,7 @@
 "use client";
 import { decrease, increase } from "@/Redux/features/cart/cartSlice";
 import Link from "next/link";
-import { AiOutlineMinusSquare, AiOutlinePlusSquare } from 'react-icons/ai';
+import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import { useDispatch, useSelector } from "react-redux";
 
 const Cart = () => {
@@ -14,15 +14,15 @@ const Cart = () => {
                 (products.length > 0)
                 &&
                 products.map((product) =>
-                    <div className="border border-green-700 rounded-md p-1 mb-3 grid grid-cols-3 items-center">
+                    <div className="px-1 mb-5 grid grid-cols-3 items-center">
                         <h1 className="text-[13px] font-semibold">{product.title}</h1>
-                        <div className="flex items-center gap-1 pl-6">
+                        <div className="flex justify-center items-center gap-3 border-2 w-[60%] mx-auto">
 
-                            <button onClick={() => dispatch(decrease(product))}><span><AiOutlineMinusSquare size={20} width={14} /></span></button>
+                            <button onClick={() => dispatch(decrease(product))}><span><AiOutlineMinus size={10} /></span></button>
 
-                            <span className="text-lg font-semibold">{product.quantity}</span>
+                            <span className="text-sm font-semibold">{product.quantity}</span>
 
-                            <button onClick={() => dispatch(increase(product))}><span><AiOutlinePlusSquare size={20} width={14} /></span></button>
+                            <button onClick={() => dispatch(increase(product))}><span><AiOutlinePlus size={15} /></span></button>
 
                         </div>
                         <div className="text-sm text-end"><span className="font-bold">Price: </span>{product.price}</div>
@@ -33,7 +33,7 @@ const Cart = () => {
                 (products.length > 0)
                     ?
 
-                    <div className="">
+                    <div className="mt-10">
                         <div className="flex justify-between">
                             <p className="text-sm font-semibold text-green-600">Total Amount:</p>
                             <span className="text-slate-600 text-sm font-semibold text-end px-1">${totalPrice}</span>
